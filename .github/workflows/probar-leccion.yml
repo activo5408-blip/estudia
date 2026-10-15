@@ -20,7 +20,6 @@ jobs:
     timeout-minutes: 360
     env:
       PYTHONUNBUFFERED: "1"
-      HF_HOME: ${{ runner.temp }}/huggingface
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
@@ -39,7 +38,7 @@ jobs:
       - name: Recuperar modelo Chatterbox
         uses: actions/cache@v4
         with:
-          path: ${{ runner.temp }}/huggingface
+          path: ~/.cache/huggingface/hub
           key: chatterbox-model-ubuntu-py311-v1
 
       - name: Recuperar audio de frases ya generado
