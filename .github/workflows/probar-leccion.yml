@@ -1,4 +1,4 @@
-name: Generar primera clase con voz clonada
+name: Probar primera clase optimizada con Chatterbox
 
 on:
   workflow_dispatch:
