@@ -1,5 +1,5 @@
 {
-  "titulo": "Prueba rápida · Inglés con Sara",
+  "titulo": "Saludos en inglés",
   "numero": "TEST",
   "canal": "Inglés con Sara",
   "ritmo_voz": 2.4,
@@ -57,5 +57,9 @@
       ]
     }
   ],
-  "descripcion": "Prueba corta de saludos básicos en inglés."
+  "descripcion": "Prueba corta de saludos básicos en inglés.",
+  "miniatura": {
+    "grande": "Saludos en inglés",
+    "chico": "3 FRASES PARA EMPEZAR"
+  }
 }
