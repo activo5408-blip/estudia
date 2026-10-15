@@ -1,0 +1,395 @@
+{
+  "titulo": "Preséntate en inglés sin miedo",
+  "numero": "01",
+  "canal": "Inglés con Sara",
+  "ritmo_voz": 2.35,
+  "ritmo_ingles": 1.35,
+  "minimo_minutos": 8,
+  "maximo_minutos": 9,
+  "descripcion": "Primera clase de inglés para principiantes: saludar, decir tu nombre, preguntar cómo está alguien y despedirte. Escucha cada frase dos veces, practica la pronunciación y responde en voz alta.",
+  "hashtags": "#InglesConSara #AprenderIngles #InglesParaPrincipiantes #EnglishForBeginners",
+  "miniatura": {
+    "grande": "PRESÉNTATE EN INGLÉS",
+    "chico": "TU PRIMERA CONVERSACIÓN"
+  },
+  "escenas": [
+    {
+      "capitulo": "1. Empieza a hablar",
+      "kicker": "LECCIÓN 1 · NIVEL PRINCIPIANTE",
+      "tablero": [
+        {
+          "t": "HELLO!",
+          "e": "grande"
+        },
+        {
+          "t": "¡Hola!",
+          "e": "medio"
+        },
+        {
+          "t": "ESCUCHA · REPITE · APRENDE",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "¡Bienvenido y bienvenida a Inglés con Sara! Esta es nuestra primera clase y vamos a empezar desde cero. No necesitas saber nada de inglés. Solo escucha, mira cómo se escribe cada frase y atrévete a repetirla en voz alta. No te preocupes si al principio tu pronunciación no sale perfecta: aprender un idioma es practicar un poquito cada día."
+        },
+        {
+          "d": "Hoy vas a aprender a saludar, decir tu nombre, preguntar cómo está otra persona y despedirte. En cada frase en inglés escucharás primero una vez y después la escucharás otra vez. Fíjate también en la pronunciación escrita en español. Esa guía es aproximada, pero te ayudará a acercarte al sonido."
+        },
+        {
+          "d": "Primera expresión: un saludo sencillo que puedes usar por la mañana, por la tarde o cuando conoces a alguien."
+        },
+        {
+          "en": "Hello!",
+          "es": "¡Hola!",
+          "pron": "jelóu",
+          "quien": "Sara"
+        },
+        {
+          "en": "Hello!",
+          "es": "¡Hola!",
+          "pron": "jelóu",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "Muy bien. La h de hello se pronuncia dejando salir aire suavemente. No es una jota fuerte. Escucha el sonido completo y evita separar demasiado las sílabas."
+        },
+        {
+          "en": "Hi!",
+          "es": "¡Hola! · saludo informal",
+          "pron": "jai",
+          "quien": "Sara"
+        },
+        {
+          "en": "Hi!",
+          "es": "¡Hola! · saludo informal",
+          "pron": "jai",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "Hi es más corto y casual. Puedes usarlo con amigos, compañeros o personas con las que tienes confianza. Ahora vamos a aprender a preguntar cómo está alguien."
+        },
+        {
+          "en": "How are you?",
+          "es": "¿Cómo estás?",
+          "pron": "jáu ar iu",
+          "quien": "Sara"
+        },
+        {
+          "en": "How are you?",
+          "es": "¿Cómo estás?",
+          "pron": "jáu ar iu",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "No hace falta traducir palabra por palabra mientras hablas. Intenta reconocer la frase completa como una sola unidad: How are you? Haz una pequeña pausa al final, como si de verdad estuvieras esperando la respuesta."
+        }
+      ]
+    },
+    {
+      "capitulo": "2. Di tu nombre",
+      "kicker": "PRESENTARTE CON NATURALIDAD",
+      "tablero": [
+        {
+          "t": "MY NAME IS…",
+          "e": "grande"
+        },
+        {
+          "t": "Me llamo…",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Ahora imagina que acabas de conocer a alguien. Después de saludar, lo más útil es decir tu nombre. En inglés puedes hacerlo de dos maneras muy comunes. La primera es my name is, que significa mi nombre es. La segunda es I'm, que es una forma corta de decir yo soy o yo estoy, según el contexto."
+        },
+        {
+          "en": "My name is Sara.",
+          "es": "Me llamo Sara. · Mi nombre es Sara.",
+          "pron": "mai néim is séra",
+          "quien": "Sara"
+        },
+        {
+          "en": "My name is Sara.",
+          "es": "Me llamo Sara. · Mi nombre es Sara.",
+          "pron": "mai néim is séra",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "En un ejemplo real, cambia Sara por tu nombre. No necesitas decirlo rápido. Lo importante es que la otra persona te entienda. Escucha ahora la forma más corta, muy frecuente en conversaciones cotidianas."
+        },
+        {
+          "en": "I'm Sara.",
+          "es": "Soy Sara. · Me llamo Sara.",
+          "pron": "aim séra",
+          "quien": "Sara"
+        },
+        {
+          "en": "I'm Sara.",
+          "es": "Soy Sara. · Me llamo Sara.",
+          "pron": "aim séra",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "I'm se pronuncia como una sola unidad, aproximadamente aim. No digas I am por separado si estás practicando esta contracción. Ambas formas son correctas, pero I'm suena muy natural al hablar."
+        },
+        {
+          "en": "What's your name?",
+          "es": "¿Cómo te llamas?",
+          "pron": "uats yor néim",
+          "quien": "Sara"
+        },
+        {
+          "en": "What's your name?",
+          "es": "¿Cómo te llamas?",
+          "pron": "uats yor néim",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "Esta pregunta sirve para conocer el nombre de otra persona. What is your name también es correcta, pero What's your name es la forma contraída que escucharás muchísimo. Fíjate en el sonido final de name: se parece a néim."
+        },
+        {
+          "en": "Nice to meet you.",
+          "es": "Mucho gusto. · Encantado de conocerte.",
+          "pron": "nais tu míit iu",
+          "quien": "Sara"
+        },
+        {
+          "en": "Nice to meet you.",
+          "es": "Mucho gusto. · Encantado de conocerte.",
+          "pron": "nais tu míit iu",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "Puedes decir esta frase justo después de conocer a alguien. No necesitas añadir nada más para que el saludo sea amable. Vamos a practicar una mini conversación completa; escucha cómo se conectan las frases."
+        },
+        {
+          "d": "Sara saluda y dice su nombre. Después pregunta el nombre de la otra persona. Imagina que estás frente a ella y responde usando tu propio nombre."
+        },
+        {
+          "en": "Hello! My name is Sara.",
+          "es": "¡Hola! Me llamo Sara.",
+          "pron": "jelóu, mai néim is séra",
+          "quien": "Sara"
+        },
+        {
+          "en": "Hello! My name is Sara.",
+          "es": "¡Hola! Me llamo Sara.",
+          "pron": "jelóu, mai néim is séra",
+          "quien": "Sara",
+          "repite": 5
+        }
+      ]
+    },
+    {
+      "capitulo": "3. Responde y sé amable",
+      "kicker": "UNA CONVERSACIÓN REAL",
+      "tablero": [
+        {
+          "t": "I'M FINE, THANK YOU.",
+          "e": "grande"
+        },
+        {
+          "t": "Estoy bien, gracias.",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Ya sabes saludar y presentarte. Ahora vamos a responder cuando alguien pregunta cómo estás. Una respuesta muy común es I'm fine, thank you. Significa estoy bien, gracias. Escucha la frase como una unidad y recuerda que también puedes responder de una manera más breve."
+        },
+        {
+          "en": "I'm fine, thank you.",
+          "es": "Estoy bien, gracias.",
+          "pron": "aim fáin, zank iu",
+          "quien": "Sara"
+        },
+        {
+          "en": "I'm fine, thank you.",
+          "es": "Estoy bien, gracias.",
+          "pron": "aim fáin, zank iu",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "En thank, la lengua se acerca suavemente a los dientes para producir el sonido th. Si todavía te cuesta, practica despacio y vuelve a intentarlo. No pasa nada si necesitas varios días."
+        },
+        {
+          "en": "I'm good, thanks.",
+          "es": "Estoy bien, gracias. · Más informal.",
+          "pron": "aim gud, zanks",
+          "quien": "Sara"
+        },
+        {
+          "en": "I'm good, thanks.",
+          "es": "Estoy bien, gracias. · Más informal.",
+          "pron": "aim gud, zanks",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "Esta respuesta es común en situaciones informales. Thanks es una forma corta de thank you. Puedes empezar con la versión que te resulte más fácil y añadir la otra cuando tengas más confianza."
+        },
+        {
+          "en": "And you?",
+          "es": "¿Y tú?",
+          "pron": "and iu",
+          "quien": "Sara"
+        },
+        {
+          "en": "And you?",
+          "es": "¿Y tú?",
+          "pron": "and iu",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "And you? devuelve la pregunta de forma breve y natural. Si alguien te pregunta cómo estás y respondes, puedes añadir And you? para mostrar interés por la otra persona."
+        },
+        {
+          "en": "I'm very well, thank you.",
+          "es": "Estoy muy bien, gracias.",
+          "pron": "aim véri uel, zank iu",
+          "quien": "Sara"
+        },
+        {
+          "en": "I'm very well, thank you.",
+          "es": "Estoy muy bien, gracias.",
+          "pron": "aim véri uel, zank iu",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "No intentes memorizar todas las respuestas de golpe. Quédate primero con I'm fine, thank you y And you? Con esas dos expresiones ya puedes mantener un intercambio muy sencillo. Ahora aprenderás a despedirte."
+        },
+        {
+          "en": "Goodbye!",
+          "es": "¡Adiós!",
+          "pron": "gudbái",
+          "quien": "Sara"
+        },
+        {
+          "en": "Goodbye!",
+          "es": "¡Adiós!",
+          "pron": "gudbái",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "en": "See you later!",
+          "es": "¡Hasta luego!",
+          "pron": "sí iu léiter",
+          "quien": "Sara"
+        },
+        {
+          "en": "See you later!",
+          "es": "¡Hasta luego!",
+          "pron": "sí iu léiter",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "Goodbye es una despedida general. See you later significa hasta luego y suena muy natural cuando esperas volver a ver a la persona. Ya tienes las piezas para empezar y terminar una conversación sencilla."
+        }
+      ]
+    },
+    {
+      "capitulo": "4. Repaso final y práctica",
+      "kicker": "AHORA TE TOCA A TI",
+      "tablero": [
+        {
+          "t": "HELLO",
+          "e": "grande"
+        },
+        {
+          "t": "MY NAME IS…",
+          "e": "medio"
+        },
+        {
+          "t": "HOW ARE YOU?",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Vamos a repasar. No mires la pronunciación durante el primer intento si puedes evitarlo. Escucha la frase, repítela en voz alta y después comprueba el significado. Recuerda que cada frase inglesa se escucha dos veces para que puedas captar el ritmo y los sonidos."
+        },
+        {
+          "d": "Primero, saluda a alguien. Después di tu nombre. Hazlo en voz alta aunque estés aprendiendo a solas; hablar activa la memoria de una manera distinta a solo leer."
+        },
+        {
+          "en": "Hi! I'm Alex.",
+          "es": "¡Hola! Soy Alex.",
+          "pron": "jai, aim áleks",
+          "quien": "Sara"
+        },
+        {
+          "en": "Hi! I'm Alex.",
+          "es": "¡Hola! Soy Alex.",
+          "pron": "jai, aim áleks",
+          "quien": "Sara",
+          "repite": 5
+        },
+        {
+          "d": "Ahora pregunta cómo está la otra persona y responde con una frase amable. Puedes usar el nombre Alex como ejemplo o sustituirlo por tu nombre."
+        },
+        {
+          "en": "How are you?",
+          "es": "¿Cómo estás?",
+          "pron": "jáu ar iu",
+          "quien": "Sara"
+        },
+        {
+          "en": "How are you?",
+          "es": "¿Cómo estás?",
+          "pron": "jáu ar iu",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "en": "I'm fine, thank you. And you?",
+          "es": "Estoy bien, gracias. ¿Y tú?",
+          "pron": "aim fáin, zank iu, and iu",
+          "quien": "Sara"
+        },
+        {
+          "en": "I'm fine, thank you. And you?",
+          "es": "Estoy bien, gracias. ¿Y tú?",
+          "pron": "aim fáin, zank iu, and iu",
+          "quien": "Sara",
+          "repite": 5
+        },
+        {
+          "d": "Para terminar, despídete. Escucha una vez, vuelve a escuchar la misma frase y repítela con calma. Cada repetición es una oportunidad para mejorar un poco la pronunciación."
+        },
+        {
+          "en": "See you later!",
+          "es": "¡Hasta luego!",
+          "pron": "sí iu léiter",
+          "quien": "Sara"
+        },
+        {
+          "en": "See you later!",
+          "es": "¡Hasta luego!",
+          "pron": "sí iu léiter",
+          "quien": "Sara",
+          "repite": 5
+        },
+        {
+          "d": "¡Excelente trabajo! Hoy aprendiste a saludar, presentarte, preguntar cómo está alguien, responder y despedirte. Tu tarea es practicar estas frases una vez al día durante cinco minutos. Di cada frase dos veces y crea una conversación con tu nombre."
+        },
+        {
+          "d": "En la próxima clase aprenderemos expresiones cotidianas para decir por favor, gracias, de nada y disculpa. Si esta lección te ayudó, suscríbete a Inglés con Sara y escribe en los comentarios cuál de las frases te resultó más fácil. ¡Nos vemos en la siguiente clase!"
+        }
+      ]
+    }
+  ]
+}
