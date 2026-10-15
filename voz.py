@@ -219,7 +219,23 @@ def _cb_modelo():
     except ImportError: pass
     dev = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Cargando la voz clonada (Chatterbox, {dev})…" + ("  OJO: sin tarjeta NVIDIA tarda MINUTOS por frase." if dev == "cpu" else ""))
-    _CB.update(m=ChatterboxMultilingualTTS.from_pretrained(device=dev), torch=torch, dev=dev)
+    m = ChatterboxMultilingualTTS.from_pretrained(device=dev)
+    # El T3 multilingüe usa por defecto hasta 1000 tokens por frase. En CPU,
+    # limitar ese máximo evita colas de generación excesivamente largas. El EOS
+    # normal sigue terminando antes; si una frase es larga, se puede subir el
+    # límite con CHATTERBOX_MAX_NEW_TOKENS.
+    try:
+        original_inference = m.t3.inference
+        limite = max(150, int(os.environ.get("CHATTERBOX_MAX_NEW_TOKENS", "500")))
+        def _inference_con_limite(*args, **kwargs):
+            pedido = kwargs.get("max_new_tokens")
+            kwargs["max_new_tokens"] = min(int(pedido or limite), limite)
+            return original_inference(*args, **kwargs)
+        m.t3.inference = _inference_con_limite
+        print(f"Límite máximo de generación por frase: {limite} tokens.")
+    except Exception as e:
+        print(f"AVISO: no se pudo ajustar el límite de Chatterbox: {e}")
+    _CB.update(m=m, torch=torch, dev=dev)
     return _CB["m"]
 
 def _cb_generar(texto, lang, cfg, ref):
