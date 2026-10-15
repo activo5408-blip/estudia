@@ -619,7 +619,7 @@ def main():
     if missing: raise RuntimeError("No se encuentra " + " y ".join(missing) + ". Comprueba FFmpeg y su carpeta bin en el PATH.")
     fondo(W, H).save(out / "fondo.png")
     final = out / f"{name}.mp4"
-    vf = ("scale=1280:720," if a.p720 else "") + "ass=leccion.ass,format=yuv420p"
+    vf = "zoompan=z='1.0+0.025*(1-cos(on/625))/2':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1920x1080:fps=25," + (("scale=1280:720,") if a.p720 else "") + "ass=leccion.ass,format=yuv420p"
     cmd = ["ffmpeg", "-y", "-loop", "1", "-framerate", "25", "-i", "fondo.png"]
     cmd += ["-i", "narracion.wav"] if wav else ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo"]
     cmd += ["-vf", vf, "-af", "apad", "-t", f"{total:.3f}", "-r", "25", "-c:v", "libx264", "-preset", "veryfast",
