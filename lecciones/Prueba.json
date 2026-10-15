@@ -1,0 +1,60 @@
+{
+  "titulo": "Prueba rápida · Inglés con Sara",
+  "numero": "TEST",
+  "canal": "Inglés con Sara",
+  "ritmo_voz": 2.4,
+  "ritmo_ingles": 1.5,
+  "escenas": [
+    {
+      "capitulo": "Saludos básicos",
+      "kicker": "PRUEBA DE UN MINUTO",
+      "tarjeta": false,
+      "tablero": [
+        {
+          "t": "HELLO",
+          "e": "grande"
+        },
+        {
+          "t": "Hola",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Hola. Vamos a practicar tres frases sencillas en inglés."
+        },
+        {
+          "en": "Hello!",
+          "es": "¡Hola!",
+          "pron": "jelóu",
+          "quien": "Sara",
+          "repite": 3
+        },
+        {
+          "en": "How are you?",
+          "es": "¿Cómo estás?",
+          "pron": "jáu ar iu",
+          "quien": "Sara",
+          "repite": 4
+        },
+        {
+          "d": "Escucha otra vez y repite en voz alta."
+        },
+        {
+          "en": "I am fine, thank you.",
+          "es": "Estoy bien, gracias.",
+          "pron": "ai am fain, zank iu",
+          "quien": "Sara",
+          "repite": 5
+        },
+        {
+          "pausa": 5,
+          "texto": "AHORA TÚ · DI LAS TRES FRASES"
+        },
+        {
+          "d": "¡Muy bien! Hoy aprendiste a saludar y preguntar cómo está alguien."
+        }
+      ]
+    }
+  ]
+}
