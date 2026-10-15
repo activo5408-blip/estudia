@@ -20,15 +20,22 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Instalar dependencia visual
-        run: python -m pip install --upgrade Pillow
+      - name: Instalar FFmpeg y dependencia visual
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade Pillow
 
-      - name: Validar formato y generar guion de prueba
-        run: python crear_video.py lecciones/Prueba.json --solo-guion --sin-voz
+      - name: Renderizar vídeo de prueba sin voz
+        run: python crear_video.py lecciones/Prueba.json --sin-voz --720p
 
-      - name: Guardar resultados para descargar
+      - name: Guardar vídeo y vista previa como artefacto
         uses: actions/upload-artifact@v4
         with:
           name: prueba-ingles-con-sara
-          path: salida/Prueba/
+          path: |
+            salida/Prueba/Prueba.mp4
+            salida/Prueba/miniatura.png
+            salida/Prueba/descripcion-youtube.txt
+            salida/Prueba/sincronizacion.txt
           if-no-files-found: error
