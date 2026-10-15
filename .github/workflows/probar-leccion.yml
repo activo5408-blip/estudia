@@ -1,41 +1,91 @@
-name: Probar lección de inglés
+name: Generar primera clase con voz clonada
 
 on:
   workflow_dispatch:
   push:
     paths:
       - "crear_video.py"
-      - "lecciones/Prueba.json"
+      - "voz.py"
+      - "voz_mujer.mp3"
+      - "lecciones/leccion-01.json"
+      - "requirements.txt"
       - ".github/workflows/probar-leccion.yml"
 
+permissions:
+  contents: read
+
 jobs:
-  generar-prueba:
+  generar-clase-01:
     runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      PYTHONUNBUFFERED: "1"
+      HF_HOME: ${{ runner.temp }}/huggingface
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
 
-      - name: Preparar Python
+      - name: Preparar Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
 
-      - name: Instalar FFmpeg y dependencia visual
+      - name: Instalar FFmpeg y fuentes
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg
-          python -m pip install --upgrade Pillow
+          sudo apt-get install -y ffmpeg fonts-liberation fonts-dejavu-core
 
-      - name: Renderizar vídeo de prueba sin voz
-        run: python crear_video.py lecciones/Prueba.json --sin-voz --720p
+      - name: Recuperar modelo Chatterbox
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/huggingface
+          key: chatterbox-model-ubuntu-py311-v1
 
-      - name: Guardar vídeo y vista previa como artefacto
+      - name: Recuperar audio de frases ya generado
+        uses: actions/cache@v4
+        with:
+          path: cache_voz
+          key: voz-clase01-${{ hashFiles('lecciones/leccion-01.json', 'voz_mujer.mp3', 'voz.py') }}
+
+      - name: Instalar PyTorch CPU y Chatterbox
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install "setuptools<81"
+          python -m pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install chatterbox-tts Pillow edge-tts
+
+      - name: Verificar voz clonada y motor
+        run: |
+          test -s voz_mujer.mp3
+          python - <<'PY'
+          import torch
+          from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+          from pathlib import Path
+          print("PyTorch:", torch.__version__)
+          print("Voz de referencia:", Path("voz_mujer.mp3").stat().st_size, "bytes")
+          print("Chatterbox importado correctamente")
+          PY
+
+      - name: Generar vídeo completo de la lección 1 con Chatterbox
+        run: python crear_video.py lecciones/leccion-01.json --720p
+
+      - name: Comprobar que el MP4 tiene vídeo y audio
+        run: |
+          test -s salida/leccion-01/leccion-01.mp4
+          ffprobe -v error -show_entries stream=codec_type -of csv=p=0 salida/leccion-01/leccion-01.mp4 | tee /tmp/streams.txt
+          grep -q video /tmp/streams.txt
+          grep -q audio /tmp/streams.txt
+          grep -q "Voz generada" salida/leccion-01/sincronizacion.txt
+
+      - name: Guardar la clase generada
         uses: actions/upload-artifact@v4
         with:
-          name: prueba-ingles-con-sara
-          path: |
-            salida/Prueba/Prueba.mp4
-            salida/Prueba/miniatura.png
-            salida/Prueba/descripcion-youtube.txt
-            salida/Prueba/sincronizacion.txt
+          name: ingles-con-sara-leccion-01-con-voz
           if-no-files-found: error
+          path: |
+            salida/leccion-01/leccion-01.mp4
+            salida/leccion-01/miniatura.png
+            salida/leccion-01/descripcion-youtube.txt
+            salida/leccion-01/capitulos.txt
+            salida/leccion-01/sincronizacion.txt
